@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<link href="css/options.css" rel="stylesheet" media="screen" />
+		<title>bili辣条机器人设置</title></head>
+	<body>
+		<nav class="navbar custom-navbar">
+			<div class="navbar-header">
+				<a class="navbar-brand">
+					<span class="logo invis-rounded">Bili
+						<span>辣条机器人</span></span>
+				</a>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="options text-center" id="options">
+					<h1 class="page-header-desc">设置</h1>
+					<div class="shadow-box options-type text-center">
+						<h4>机器人配置</h4>
+						<div class="options-type-desc">设置基本运行时间参数（单位秒），辣条将过期自动赠送直播间ID</div>
+						<div class="container-fluid">
+							<div class="options_input">机器人休息时间 <input type="number" id="looptime" /></div>
+							<div class="options_input">被和谐重试时间 <input type="number" id="blockedretrytime" /></div>
+							<div class="options_input">自动赠送直播间 <input type="number" id="autosendroomid" /></div>
+						</div>
+						<div class="container-fluid">
+							<div class="col-xs-3">
+								<button class="button" id="default_options">默认</button></div>
+							<div class="col-xs-3">
+								<button class="button" id="apply">应用</button></div>
+							<div class="col-xs-3">
+								<button class="button" id="reboot">重启</button></div>
+						</div>
+					</div>
+					<div class="shadow-box support text-center">
+						<h4>更多帮助</h4>
+						<div class="container-fluid">
+							<div class="col-xs-2">
+								<a href="https://vcvnc.com" target="_blank" class="box btn">
+									<img src="images/subscribe.png">
+									<p>访我们的网站</p>
+								</a>
+							</div>
+							<div class="col-xs-2">
+								<a href="mailto:g16324490@gmail.com" target="_blank" class="box btn">
+									<img src="images/email-round.png">
+									<p>发邮件给我们</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popLayer"></div>
+		<div id="popBox">
+			<div id="popContent"></div>
+		</div>
+		
+	</body>
+	<script src="options.js"></script>
+
+</html>
